@@ -1,4 +1,5 @@
 // main.dart
+import 'package:dog_rater/dog_card.dart';
 import 'package:flutter/material.dart';
 import 'dog_model.dart';
 
@@ -54,7 +55,9 @@ class _MyHomePageState extends State<MyHomePage> {
             /// Container is a convenience widget that lets us style it's
             /// children. It doesn't take up any space itself, so it
             /// can be used as a placeholder in your code.
-            body: Container(),
+            body: Container(
+              child: DogCard(intialDoggos[1]),
+            ),
         );
     }
 }
